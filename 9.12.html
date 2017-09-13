@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	// 	function Person(){
+
+	// }
+	// let zhangsan = new Person();
+	// let lisi = new Person();
+	// var danyinghua = new Person();
+ //    // console.log()
+ //   //添加属性  方法（需明白给谁添加属性，添加什么属性）
+ //   zhangsan.age = 18;
+ //   zhangsan.name = 'zhangsan';
+ //   lisi.age = 16;
+ //   lisi.name = 'lisi';
+ //   lisi.sex ='男';
+ //   lisi.hair ='short hair';
+ //   danyinghua.age = 18;
+ //   danyinghua.name = 'zhangsan';
+
+   //访问
+   //谁  什么
+//   console.log((zhangsan.name))
+//    console.log((lisi))
+// console.log((danyinghua.age))
+
+// 	function Person(){
+
+// 	}
+// 	let zhangsan = new Person();
+// 	let lisi = new Person();
+// 	var danyinghua = new Person();
+//     // console.log()
+//    //添加属性  方法（需明白给谁添加属性，添加什么属性）
+//    zhangsan.age = 18;
+//    zhangsan.name = 'zhangsan';
+//    lisi.age = 16;
+//    lisi.name = 'lisi';
+//    lisi.sex ='男';
+//    lisi.hair ='short hair';
+//    danyinghua.age = 18;
+//    danyinghua.name = 'zhangsan';
+
+//    //访问
+//    //谁  什么
+//   console.log((zhangsan.name))
+//    console.log((lisi))
+// console.log((danyinghua.age))
+
+// //构造函数
+// function Student(){
+
+// }
+// let zhangsan = new Student()
+// zhangsan.age = 18;
+// zhangsan.name = 'zhangsan'
+// zhangsan.say=function(){
+//    alert(zhangsan.name)
+// }
+// console.log(zhangsan)
+// alert(zhangsan.age)
+// zhangsan.say();
+
+
+
+// function Student(){
+//    this.name = 'zhangsan'
+//    this.age = 18;
+//    this.sex = '女'
+//    this.say=function(){
+//     alert(1)
+//    }
+// }
+// let zhangsan = new Student()
+// let lisi = new Student()
+// zhangsan.height=180;
+// zhangsan.classes = 'WUIF-1707'
+// lisi.study=function(){
+//   alert('学习')
+// }
+// console.log(lisi)
+// lisi.name = 'lisi'
+// console.log(lisi)
+// console.log(zhangsan)
+
+
+// function Student(name,age, sex){
+//   this.name=name
+//   this.sex=sex
+//   this.age=age
+//   this.say=function(){
+//    alert(1)
+//   }
+// }
+// let zhangsan=new Student('zhangsan',null,'女')
+// console.log(zhangsan)
+
+
+// function Student(name,age,sex){
+//    this.name = name;
+//    this.age = age;
+//    this.sex = sex;
+//    this.say = function(){
+//         alert(1)
+//   };
+// }
+// let zhangsan = new Student('zhangsan',18,'nan')
+// let xiaohong = new Student('xiaohong',16,'nv')
+// console.log(zhangsan)
+// alert(zhangsan.say())//1,undefined
+// alert(zhangsan.say);//弹出函数体
+
+
+
+
+// 访问对象中的元素的两种方法
+// console.log(xiaohong.age)
+// alert(xiaohong['age'])
+// xiaohong.say();
+//zhangsan['say']();
+
+
+//for in   遍历
+//for(let i in zhangsan){
+//console.log(`${i}`)};
+//alert(typeof i)
+//console.log(`${i}--${zhangsan[i]}`)
+
+
+//声明后添加属性
+//   let zhangsan = {};
+//    zhangsan.age = 18;
+//    zhangsan.name = 'zhangsan';
+//    zhangsan.say=function{
+//     alert(1)
+//   }
+//   alert(zhangsan.constructor)//返回它的构造函数
+
+
+
+
+// function Student(){
+//   zhangsan.age = 18;
+//   zhangsan.name = 'zhangsan';
+// }
+
+
+// //用json写对象
+// //声明同时添加属性
+// let iphone8={
+//   // 属性（引号可加可不加）   冒号    值   逗号//（必须有、最后一个可加可不加）
+//   'brand' : 'iphone8',
+//   'color' : 'red',
+//   'size' : '7.0',
+//   'prize' : '5000',
+//   phone:function(){
+//     alert('打电话')
+//   },
+//   msg:function(){
+//     alert('发短信')
+//   },
+//   music:function(){
+//     alert('听音乐')
+//   }
+// }
+
+// iphone8.music();
+// for(let i in iphone8){
+// console.log(`${i}-${iphone8[i]}`)
+//  }
+//  console.log(iphone8.size)
+ 
+
+
+
+
+	
+//// 关键字   类名{
+// //	constructor(){}
+// //}	
+// class Student{
+// 	constructor(){
+// 	this.age = 18;
+// 	this.sex='nan'
+// 	this.height=180
+// 	}
+// 	study(){
+// 		alert('学习')
+// 	}
+// }
+
+// let zhangfeng = new Student();
+// zhangfeng.name ='zhangfeng'
+// zhangfeng.study();
+// console.log(zhangfeng)
+// // zhangfeng.constructor();
+// alert(zhangfeng.age)
+
+
+
+
+
+
+
+//prototype(原型对象)
+
+// function Person(name,age,sex){
+// 	this.name = name
+// 	this.age = age
+// 	this.sex = sex
+// 	this.say=function(){
+// 	    alert('说话')
+// 	}
+// 	this.study=function(value){
+//       console.log(value)
+// 	}
+// 	this.class=function(value){
+//        alert('this.sex')
+// 	}
+// }
+// let lili = new Person()
+// console.log(lili)
+
+// myArry
+// var arr = new Array('a','b','c','d')
+// console.log(arr)
+
+// function myArry(){
+// 	// this[0] = arguments[0]
+// 	// this[1] = arguments[1]
+// 	// this[2] = arguments[2]
+// 	for(let i=0;i<arguments.length;i++){
+// 		this[i] = arguments[i]
+// 	}
+// 	this.length = arguments.length;
+// 	this.push=function(){
+// 		for(let i=0;i<arguments.length;i++){
+//              this[this.length] = arguments[i]
+//               this.length++
+
+// 		}
+// 	}
+
+
+
+
+// 	this.indexOf=function(value){
+// 		for(let i=0;i<this.length;i++){
+// 			if(this[i]==value){
+// 				return i
+// 			}
+// 		}
+// 		return -1;
+// 	}
+
+
+
+
+//  this.lastindex=function(value){
+// 		for(let i=this.length-1;i>=0;i--){
+// 			if(this[i]==value){
+// 				return i
+// 			}
+// 		}
+// 		return 'flase';
+// 	}
+
+
+
+
+// 	this.includes=function(value){
+// 		for(let i=0;i<this.length;i++){
+// 			if(this[i]==value){
+// 				return true;
+// 			}
+// 		}
+// 		return false;
+// 	}
+
+// this.delNull =function(){
+// 	let newarr=new myArry()
+// 	for(let i=0;i<this.length;i++){
+// 		if(this[i]!==undefined){
+//             newarr.push(this[i])
+// 		}
+// 	}
+// 	return newarr
+// }
+
+
+//    this.reverse = function(){
+//    	var newarr = new myArry()
+//    	for(let i=this.length-1;i>=0;i--){
+//    		newarr[newarr.length] =this[i]
+//    	}
+//    	return newarr
+//    }
+
+
+
+
+ //   this.join =function(value){
+ //    let  result='';
+	// for(let i=0;i<this.length;i++){
+	// 	if(i<this.length-1){
+	// 	result += arr[i] + value
+	// }else{
+	// 	result += arr[i]
+	// }
+
+ //    } 
+ //    return result
+ //  }
+   
+
+
+//    this.some = function(fn){
+//        for(var i=0; i<this.length;i++){
+//    	   if(fn(this[i])){
+//    		return true
+//    	   }
+//    }
+//    return false
+// 	}
+
+
+
+// 	this.every = function(fn){
+//        for(var i=0; i<this.length;i++){
+//    	   if(fn(this[i])){
+//    		return false
+//    	   }
+//    }
+//    return true
+// 	}   
+
+
+
+
+//  this.filter = function(fn){
+// 		let newarr=new myArry()
+// 	for(let i=0;i<this.length;i++){
+// 		if(fn(this[i])){
+// 		 newarr[newarr.length]=this[i]
+// 		}
+// 	}
+// 		return newarr
+// }
+
+
+// this.map = function(fn){
+// 	let newarr=new myArry()
+// 	for(i=0;i<this.length;i++){
+//         // newarr[newarr.length]=fn(arr[i])
+//       newarr.push(fn(this[i])) 
+// 	}
+//   return newarr
+// }
+
+
+// this.sortUP =function(){
+// 	for(let i=0;i<this.length;i++){
+// 		for(let j=i+1;j<this.length;j++){
+			
+// 			if(this[i]>this[j]){
+// 				let temp
+//          		temp = this[i]
+//          		this[i]= this[j]
+//          		this[j] = temp
+// 			}
+// 		}
+// 	}
+// 	return this
+// }
+// this.sortDOWN =function(){
+	
+// 	for(let i=0;i<this.length;i++){
+// 		for(let j=i+1;j<this.length;j++){
+			   
+// 			if(this[i]<this[j]){
+// 				 let temp
+//          		temp = this[i]
+//          		this[i]= this[j]
+//          		this[j] = temp
+// 			}
+// 		}
+// 	}
+// 	return this
+// }
+// this. sort = function(type){
+//       type=type==undefined?'<':type
+//      	if(type=='<'){
+//      	   console.log(this.sortUP())
+//      	}
+//      	if(type=='>'){
+//      		 console.log(this.sortDOWN())
+//      	}
+//  }
+
+
+//   this.min=function (){
+//   	    let min =this[0]
+//         for(let i=0;i<this.length;i++){
+//        	if(min>this[i]){
+//        		min=this[i]  
+//        	}
+       
+//        }
+//        return min
+//   } 
+
+
+//   this.max = function (){
+//   	  let max =this[0]
+  	  
+//        for(let i=0;i<this.length;i++){
+//        	if(max<this[i]){
+//        		max=this[i]
+//        	}
+       	
+//        }
+//        return max
+//   } 
+
+// }
+// let arr = new myArry('a','b','c','d',1,2,3,4)
+// // arr.push('x','y','z')
+// // let indexof = arr.indexOf('d')
+// // let lastindex = arr.lastindex('n')
+// // let includes = arr.includes('n')
+// // let reverse = arr.reverse()
+// let join = arr.join('-')
+// // let some = arr.some(function(value){
+// // 	return value%2==0
+// // })
+// // let every = arr.every(function(value){
+// // 	return value%2==0
+// // })
+
+// // let filter = arr.filter(function(value){
+// // 	return value%2 == 1
+// // })
+ // let arr = new myArry(1,2,3,4)
+// // let result=arr.map(function(value){
+// //    return value+2
+// // })
+// let arr=[1,2,3,4,5,6,8]
+//  let map = arr.map(function(value){
+// 	return value*2
+// })
+// console.log(map)
+// // let max=arr.max()
+// // let min=arr.min()
+// //  let arr = new myArry(1,undefined,2,3,4) 
+// // let delNull=arr.delNull()
+// let sortUP= arr.sortUP()
+// console.log(sortUP)
+// let sortDOWN = arr.sortDOWN()
+// console.log(sortDOWN)
+// let sort = arr.sort(function(type){
+// 	return type='<'
+// })
+// arr.sort('<')
+// // console.log(result)
+// // console.log(max)
+// // console.log(min)
+// // console.log(delNull)
+// // console.log(filter)
+// // console.log(eome)
+// // console.log(ivery)
+// // console.log(sndexof)
+// // console.log(lastindex)
+// // console.log(includes)
+// // console.log(reverse)
+// console.log(join)
+// // console.log(arr)
+
+
+
+
+
+
+//  function Person(){
+//  	this.name='zhangsan'
+//  	this.age=16
+//  	//第一种（所有实例化对象都有,在对象中可以看到）
+//  	this.sleep=function(){
+// 		alert('休息')
+// 	}
+//  }
+// //原型对象，他的数据类型为object
+// //可以把一些属性和方法放入原型，节省内存，一般放方法
+// Person.prototype ={
+// 	sleep:function(){
+// 		alert('休息')
+// 	},
+// 	say:function(){
+// 		alert(this.name)
+// 	},
+// 	//第二种（在原型对象中可以看到，所有实例化对象都有）
+// 	play:function(){
+// 		alert(`${this.name}玩儿`)
+// 	},
+// 	//在原型对象中可以看到，所有实例化对象都有
+// 	hobby:'play pingpong'
+// }
+
+// //在原型对象中可以看到，所有实例化对象都有
+// Person.prototype.eat = function(){
+// 	alert ('eat')
+// }
+
+// let zhangsan=new Person()
+
+// //只有张三有这种方法
+// zhangsan.eat = function(){
+// 	alert ('eat')
+// }
+// console.log(zhangsan)
+// delete zhangsan.age   //删除某一个对象的属性
+// delete zhangsan.play   //删除某一个对象的方法
+// zhangsan =null;     //删除对象
+// // let lisi=new Person()
+// // list.eat()
+// // console.log(zhangsan)
+// function Student(){
+// 	this.name = 'student'
+// }
+// function Person(){
+// 	this.name = 'person'
+// }
+// let zhangsan = new Student()
+// let lisi =new Person()
+// console.log(zhangsan instanceof Student)
+// console.log(lisi instanceof Person)
+//  let arr=[]
+// console.log(arr instanceof Array)
+// console.log(lisi instanceof Array)
+
+// function Person(){
+// 	this.name = 'person';
+// 	this.age = 18;
+// 	this.sex ='nan';
+// 	this.sleep=function(){
+// 		alert('睡觉')
+// 	}
+// 	// this.aa=function(){
+// 	// 	alert('Person构造函数的aa')
+// 	// }
+// }
+// Person.prototype={
+// 	aa:function(){
+// 		alert('Person原型对象的aa')
+// 	}
+// }
+// // Person.prototype.aa=function(){
+// // 	alert('Person原型对象的aa')
+// // }
+// function Student(){
+//    this.classes = 'WUIF-1707';
+//    this.number = '1462141508'
+//    this.study =function(){
+//    	alert('学习')
+//    }
+//    this.aa=function(){
+// 		alert('Student构造函数的aa')
+// 	}
+// }
+// Student.prototype = new Person();
+// // Student.prototype=function(){
+// //     aa:function(){
+// // 		alert('Student原型对象的aa')
+// // 	}
+// // }
+// Student.prototype.aa=function(){
+// 	alert('Student原型对象的aa')
+// }
+// let zhangsan = new Person();
+
+// let lisi = new Student();
+// console.log(lisi)
+// console.log(lisi.__proto__ == new Student())
+
+
+// let str = 'abcdabcdabcdabcd'
+// console.log(str)
+// console.log(str.length)//字符串的长度只能查看，不能修改
+// let fh=str.constructor
+// console.log(fh)
+// let sd = str.charAt(2)//返回指定位置的字符
+// console.log(sd)
+// let nf=str.charCodeAt(1)//返回1指定的字符对应的Unicode编码（ASCIImazhi）
+// console.log(nf)
+// let gb = String.fromCharCode(98)//返回Unicode编码（98）所对应的字符串
+// console.log(gb)
+// let indexOf = str.indexOf('abcd')
+// let indexOf1 = str.indexOf('abcd')
+// console.log(indexOf)
+// console.log(indexOf1)
+// let lastIndex = str.lastIndexOf('abcdg')
+// let lastIndex1 = str.lastIndexOf('abcd')
+// console.log(lastIndex)
+// console.log(lastIndex1)
+//  let includes = str.includes('abc')
+//  console.log(includes)
+// let str1 = str.slice(2,4)
+// let str2 = str.slice(2)
+// let str6 = str.slice(3,-2)
+// console.log(str6)
+// console.log(str1)
+// console.log(str2)
+// let str5 = str.substring(2)
+// let str3 = str.substring(2,4)
+
+// // let str9 = str.substring(0,-1)
+// // console.log(str9)不支持，没有答案
+// console.log(str5)
+// console.log(str3)
+// let str10 = str.substr(1,2)
+// console.log(str10)
+// let str11 = str.substr(3)
+// console.log(str11)
+// let str7 = str.replace('abcd','****')
+// console.log(str7);
+// console.log(str);
+// console.log("*".repeat(5))
+// let re = replaceAll(str,'abc')
+// console.log(re)
+// 
+// function replaceAll(str,rstr){
+// 	// let star ="*".repeat(rstr.length)
+// 	let star=''
+// 	for(let i=0;i<rstr.length;i++){
+// 		star+='*'
+// 	}
+// 	while(str.includes(rstr) == true){
+// 		 str = str.replace(rstr,star)
+// 	}
+// 	return str
+// }
+// let str = 'a-b-c-d'
+// let arr = str.split('-',2)
+// console.log(arr)
+// let str22 = 'qwert'
+// let str33 = 'WDFDG'
+// console.log(str22.toUpperCase());
+// console.log(str33.toLowerCase());
+
+
+
+// let url='https//www.baidu.comhttps//www.baidu.comhttps//www.baidu.comhttps//www.baidu.comhttps//www.baidu.comhttps//www.baidu.comhttps//www.baidu.comhttps//www.baidu.comhttps//www.baidu.comhttps//www.baidu.comhttps//www.baidu.com'
+
+// let i= position(url,'baidu')
+// console.log(i)
+// function position(str,rStr){
+//  
+// let arr = []
+// 	while(str.includes(rStr)){
+//          arr.push(str.indexOf(rStr))
+// 		 str = str.replace(rStr,star)
+		
+// 	}
+// 	return arr
+// }
+
+
+
+
+
+
+// let arr=[];
+// for(let i=0;i<url.length;i++){
+	
+// 	if(url.substr(i,5)=='baidu'){
+// 		arr[arr.length]	= i;
+// 	}
+// }
+// console.log(arr);
+</script>
+</body>
+</html>
